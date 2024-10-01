@@ -5,6 +5,7 @@ public class AnalizadorTexto {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese un texto para analizar:");
         String texto = scanner.nextLine().toLowerCase();
+        
 
         int[] frecuencia = new int[26];
         int totalLetras = 0;
@@ -22,7 +23,7 @@ public class AnalizadorTexto {
             } else if (c == ' ' && i > 0 && texto.charAt(i - 1) != ' ') {
                 totalPalabras++;
             }
-        }
+        }   
         totalPalabras++; // Contar la última palabra
 
         System.out.println("Análisis del texto:");
